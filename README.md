@@ -2,14 +2,12 @@
 
 NST golang course deliverable project. 
 
-# Dependency setup
+## Dependency setup
 
 [AWS SDK for Go v2](https://github.com/aws/aws-sdk-go-v2)
 
-Within `src`, run:  
-- `go get github.com/aws/aws-sdk-go-v2/aws`
-- `go get github.com/aws/aws-sdk-go-v2/config`
-- `go get github.com/aws/aws-sdk-go-v2/service/dynamodb`
+Within `src`, run `go get` to install all mod dependencies.
 
-to install deps. 
+## AWS Credentials
 
+Go will attempt to load the default AWS credentials and region from the user profile foler `<user-profile-path>/.aws/{config,credentials}`
